@@ -28,7 +28,7 @@ struct BookContentsView: View {
         .onAppear{
             tabIndex = book.currentPage
         }
-        .tabViewStyle(.page(indexDisplayMode: .never))
+        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
         
 
     }
