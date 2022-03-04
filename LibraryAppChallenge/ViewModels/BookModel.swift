@@ -47,4 +47,14 @@ class BookModel : ObservableObject {
    
     }
     
+    func updateRating (forId:Int, rating:Int)
+    {
+        for index in 0...books.count-1
+        {
+            if books[index].id == forId {
+                
+                books[index].rating = rating
+            }
+        }
+    }
 }

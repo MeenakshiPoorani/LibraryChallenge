@@ -50,6 +50,9 @@ struct BookDetailsView: View {
                             Text("4").tag(4)
                             Text("5").tag(5)
                         }.padding([.leading, .bottom, .trailing],40).pickerStyle(SegmentedPickerStyle())
+                            .onChange(of: pickerIndex) { value in
+                                model.updateRating(forId: book.id, rating:pickerIndex)
+                            }
                     }
 
                 }
