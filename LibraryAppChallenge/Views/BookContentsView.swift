@@ -20,6 +20,7 @@ struct BookContentsView: View {
                 
                 VStack {
                     Text(book.content[index])
+                    Spacer()
                     Text(String(index+1))
                         .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 }.padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/).tag(index)
